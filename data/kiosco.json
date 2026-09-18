@@ -1,0 +1,584 @@
+{
+  "version": 1,
+  "lastUpdated": 1789756606799,
+  "users": [
+    {
+      "id": "usr_admin_1",
+      "email": "admin@kiosco.edu",
+      "role": "admin",
+      "nombre": "Prof. Roberto",
+      "apellido": "Gómez",
+      "nombreVisible": "Roberto",
+      "isBlocked": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "totalSpent": 0,
+      "orderCount": 0,
+      "favorites": []
+    },
+    {
+      "id": "usr_alumno_1",
+      "email": "matias@alumno.edu",
+      "role": "cliente",
+      "nombre": "Matías",
+      "apellido": "Olís",
+      "nombreVisible": "Matias",
+      "isBlocked": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "totalSpent": 4200,
+      "orderCount": 2,
+      "favorites": [
+        "prod_coca",
+        "prod_alfajor_havanna"
+      ]
+    },
+    {
+      "id": "usr_alumno_2",
+      "email": "sofia@alumno.edu",
+      "role": "cliente",
+      "nombre": "Sofía",
+      "apellido": "Martínez",
+      "nombreVisible": "Sofi",
+      "isBlocked": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "totalSpent": 2800,
+      "orderCount": 1,
+      "favorites": [
+        "prod_agua",
+        "prod_barrita"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "bebidas",
+      "nombre": "Bebidas",
+      "icono": "CupSoda",
+      "activa": true,
+      "orden": 1
+    },
+    {
+      "id": "alfajores",
+      "nombre": "Alfajores",
+      "icono": "Cookie",
+      "activa": true,
+      "orden": 2
+    },
+    {
+      "id": "golosinas",
+      "nombre": "Golosinas",
+      "icono": "Candy",
+      "activa": true,
+      "orden": 3
+    },
+    {
+      "id": "snacks",
+      "nombre": "Snacks",
+      "icono": "Popcorn",
+      "activa": true,
+      "orden": 4
+    },
+    {
+      "id": "comida",
+      "nombre": "Comida Caliente & Sándwiches",
+      "icono": "Sandwich",
+      "activa": true,
+      "orden": 5
+    },
+    {
+      "id": "saludable",
+      "nombre": "Opciones Saludables",
+      "icono": "Apple",
+      "activa": true,
+      "orden": 6
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_coca",
+      "nombre": "Coca-Cola 500ml",
+      "marca": "Coca-Cola",
+      "categoriaId": "bebidas",
+      "descripcion": "Gaseosa refrescante sabor original en botella de 500ml bien fría.",
+      "imagen": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 1100,
+      "precioVenta": 1800,
+      "stock": 24,
+      "stockMinimo": 6,
+      "sku": "BEB-001",
+      "estado": "disponible",
+      "destacado": true,
+      "enPromocion": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    },
+    {
+      "id": "prod_agua",
+      "nombre": "Agua Mineral Villavicencio 500ml",
+      "marca": "Villavicencio",
+      "categoriaId": "bebidas",
+      "descripcion": "Agua mineral de manantial natural sin gas.",
+      "imagen": "https://images.unsplash.com/photo-1548839140-29a749e1bc4e?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 700,
+      "precioVenta": 1200,
+      "stock": 18,
+      "stockMinimo": 5,
+      "sku": "BEB-002",
+      "estado": "disponible",
+      "destacado": false,
+      "enPromocion": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    },
+    {
+      "id": "prod_aquarius",
+      "nombre": "Aquarius Manzana 500ml",
+      "marca": "Aquarius",
+      "categoriaId": "bebidas",
+      "descripcion": "Agua saborizada de manzana con jugo natural de frutas.",
+      "imagen": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 950,
+      "precioVenta": 1500,
+      "stock": 12,
+      "stockMinimo": 4,
+      "sku": "BEB-003",
+      "estado": "disponible",
+      "destacado": false,
+      "enPromocion": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    },
+    {
+      "id": "prod_alfajor_havanna",
+      "nombre": "Alfajor Havanna 70% Cacao",
+      "marca": "Havanna",
+      "categoriaId": "alfajores",
+      "descripcion": "Relleno de abundante dulce de leche y cobertura de chocolate amargo 70%.",
+      "imagen": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 1400,
+      "precioVenta": 2200,
+      "stock": 15,
+      "stockMinimo": 5,
+      "sku": "ALF-001",
+      "estado": "disponible",
+      "destacado": true,
+      "enPromocion": true,
+      "precioPromocional": 2000,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    },
+    {
+      "id": "prod_alfajor_guaymallen",
+      "nombre": "Alfajor Guaymallén Triple Blanco",
+      "marca": "Guaymallén",
+      "categoriaId": "alfajores",
+      "descripcion": "El clásico de los recreos con triple capa y dulce de leche cremoso.",
+      "imagen": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 450,
+      "precioVenta": 800,
+      "stock": 35,
+      "stockMinimo": 10,
+      "sku": "ALF-002",
+      "estado": "disponible",
+      "destacado": false,
+      "enPromocion": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    },
+    {
+      "id": "prod_capitan",
+      "nombre": "Alfajor Capitán del Espacio Triple",
+      "marca": "Capitán del Espacio",
+      "categoriaId": "alfajores",
+      "descripcion": "Legendario alfajor triple bañado en chocolate con corazón de dulce de leche.",
+      "imagen": "https://images.unsplash.com/photo-1579372786545-d24232daf58c?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 900,
+      "precioVenta": 1500,
+      "stock": 8,
+      "stockMinimo": 5,
+      "sku": "ALF-003",
+      "estado": "disponible",
+      "destacado": true,
+      "enPromocion": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    },
+    {
+      "id": "prod_doritos",
+      "nombre": "Doritos Queso Nacho 95g",
+      "marca": "Doritos",
+      "categoriaId": "snacks",
+      "descripcion": "Totopos crujientes de maíz con intenso sabor a queso nacho.",
+      "imagen": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 1200,
+      "precioVenta": 1900,
+      "stock": 4,
+      "stockMinimo": 5,
+      "sku": "SNK-001",
+      "estado": "stock_bajo",
+      "destacado": false,
+      "enPromocion": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    },
+    {
+      "id": "prod_lays",
+      "nombre": "Papas Lays Clásicas 85g",
+      "marca": "Lay's",
+      "categoriaId": "snacks",
+      "descripcion": "Papas fritas cortadas finas y crocantes con sal marina.",
+      "imagen": "https://images.unsplash.com/photo-1527842891421-42eec6e703ea?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 1100,
+      "precioVenta": 1750,
+      "stock": 14,
+      "stockMinimo": 5,
+      "sku": "SNK-002",
+      "estado": "disponible",
+      "destacado": true,
+      "enPromocion": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    },
+    {
+      "id": "prod_tostado",
+      "nombre": "Tostado de Jamón y Queso en Pan de Miga",
+      "marca": "Kiosco Elaboración Propia",
+      "categoriaId": "comida",
+      "descripcion": "Preparado y tostado al momento con abundante jamón cocido y queso muzzarella fundido.",
+      "imagen": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 1500,
+      "precioVenta": 2600,
+      "stock": 10,
+      "stockMinimo": 3,
+      "sku": "CMD-001",
+      "estado": "disponible",
+      "destacado": true,
+      "enPromocion": true,
+      "precioPromocional": 2400,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    },
+    {
+      "id": "prod_empanada",
+      "nombre": "Empanada de Carne Cortada a Cuchillo",
+      "marca": "Kiosco Elaboración Propia",
+      "categoriaId": "comida",
+      "descripcion": "Empanada horneada caliente y jugosa, lista para comer en el recreo.",
+      "imagen": "https://images.unsplash.com/photo-1628294895950-9805252327bc?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 850,
+      "precioVenta": 1400,
+      "stock": 0,
+      "stockMinimo": 4,
+      "sku": "CMD-002",
+      "estado": "agotado",
+      "destacado": false,
+      "enPromocion": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    },
+    {
+      "id": "prod_beldent",
+      "nombre": "Chicle Beldent Menta Infini",
+      "marca": "Beldent",
+      "categoriaId": "golosinas",
+      "descripcion": "Goma de mascar sin azúcar con sabor menta de larga duración.",
+      "imagen": "https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 500,
+      "precioVenta": 900,
+      "stock": 28,
+      "stockMinimo": 6,
+      "sku": "GOL-001",
+      "estado": "disponible",
+      "destacado": false,
+      "enPromocion": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    },
+    {
+      "id": "prod_barrita",
+      "nombre": "Barra de Cereal Flow Avena y Frutos Rojos",
+      "marca": "Flow Cereales",
+      "categoriaId": "saludable",
+      "descripcion": "Barra energética natural rica en fibras y sin grasas trans.",
+      "imagen": "https://images.unsplash.com/photo-1622484214647-8149e830e713?w=600&auto=format&fit=crop&q=80",
+      "precioCompra": 600,
+      "precioVenta": 1100,
+      "stock": 20,
+      "stockMinimo": 5,
+      "sku": "SAL-001",
+      "estado": "disponible",
+      "destacado": false,
+      "enPromocion": false,
+      "createdAt": "2026-09-18T18:36:46.798Z",
+      "updatedAt": "2026-09-18T18:36:46.798Z"
+    }
+  ],
+  "stockMovements": [
+    {
+      "id": "mov_1",
+      "productoId": "prod_coca",
+      "productoNombre": "Coca-Cola 500ml",
+      "tipo": "entrada",
+      "cantidad": 24,
+      "stockPrevio": 0,
+      "stockPosterior": 24,
+      "motivo": "Compra a proveedor Distribuidora Bebidas",
+      "usuarioId": "usr_admin_1",
+      "usuarioNombre": "Roberto",
+      "fecha": "2026-09-16T18:36:46.799Z"
+    },
+    {
+      "id": "mov_2",
+      "productoId": "prod_alfajor_havanna",
+      "productoNombre": "Alfajor Havanna 70% Cacao",
+      "tipo": "entrada",
+      "cantidad": 20,
+      "stockPrevio": 0,
+      "stockPosterior": 20,
+      "motivo": "Compra inicial de stock",
+      "usuarioId": "usr_admin_1",
+      "usuarioNombre": "Roberto",
+      "fecha": "2026-09-16T18:36:46.799Z"
+    },
+    {
+      "id": "mov_3",
+      "productoId": "prod_empanada",
+      "productoNombre": "Empanada de Carne Cortada a Cuchillo",
+      "tipo": "salida",
+      "cantidad": -2,
+      "stockPrevio": 2,
+      "stockPosterior": 0,
+      "motivo": "Producto vencido / descarte del día anterior",
+      "usuarioId": "usr_admin_1",
+      "usuarioNombre": "Roberto",
+      "fecha": "2026-09-18T13:36:46.799Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_101",
+      "numeroPedido": 101,
+      "clienteId": "usr_alumno_1",
+      "clienteNombre": "Matías Olís",
+      "clienteVisible": "Matias",
+      "clienteEmail": "matias@alumno.edu",
+      "items": [
+        {
+          "productoId": "prod_coca",
+          "productoNombre": "Coca-Cola 500ml",
+          "marca": "Coca-Cola",
+          "cantidad": 1,
+          "precioUnitario": 1800,
+          "costoUnitario": 1100,
+          "subtotal": 1800,
+          "imagen": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600&auto=format&fit=crop&q=80"
+        },
+        {
+          "productoId": "prod_alfajor_havanna",
+          "productoNombre": "Alfajor Havanna 70% Cacao",
+          "marca": "Havanna",
+          "cantidad": 1,
+          "precioUnitario": 2000,
+          "costoUnitario": 1400,
+          "subtotal": 2000,
+          "imagen": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop&q=80"
+        }
+      ],
+      "total": 3800,
+      "costoTotal": 2500,
+      "gananciaEstimada": 1300,
+      "metodoPago": "mercadopago",
+      "estadoPago": "confirmado",
+      "modalidadRetiro": "recreo",
+      "recreoHora": "10:15 - Primer Recreo",
+      "estado": "entregado",
+      "fecha": "2026-09-17T22:36:46.799Z",
+      "comprobanteId": "COMP-101-9842",
+      "updatedAt": "2026-09-17T23:36:46.799Z"
+    },
+    {
+      "id": "ord_102",
+      "numeroPedido": 102,
+      "clienteId": "usr_alumno_2",
+      "clienteNombre": "Sofía Martínez",
+      "clienteVisible": "Sofi",
+      "clienteEmail": "sofia@alumno.edu",
+      "items": [
+        {
+          "productoId": "prod_tostado",
+          "productoNombre": "Tostado de Jamón y Queso en Pan de Miga",
+          "marca": "Kiosco",
+          "cantidad": 1,
+          "precioUnitario": 2400,
+          "costoUnitario": 1500,
+          "subtotal": 2400,
+          "imagen": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80"
+        }
+      ],
+      "total": 2400,
+      "costoTotal": 1500,
+      "gananciaEstimada": 900,
+      "metodoPago": "efectivo",
+      "estadoPago": "confirmado",
+      "modalidadRetiro": "inmediato",
+      "estado": "listo",
+      "fecha": "2026-09-18T16:36:46.799Z",
+      "comprobanteId": "COMP-102-1784",
+      "updatedAt": "2026-09-18T17:36:46.799Z"
+    },
+    {
+      "id": "ord_103",
+      "numeroPedido": 103,
+      "clienteId": "usr_alumno_1",
+      "clienteNombre": "Matías Olís",
+      "clienteVisible": "Matias",
+      "clienteEmail": "matias@alumno.edu",
+      "items": [
+        {
+          "productoId": "prod_lays",
+          "productoNombre": "Papas Lays Clásicas 85g",
+          "marca": "Lay's",
+          "cantidad": 1,
+          "precioUnitario": 1750,
+          "costoUnitario": 1100,
+          "subtotal": 1750,
+          "imagen": "https://images.unsplash.com/photo-1527842891421-42eec6e703ea?w=600&auto=format&fit=crop&q=80"
+        },
+        {
+          "productoId": "prod_beldent",
+          "productoNombre": "Chicle Beldent Menta Infini",
+          "marca": "Beldent",
+          "cantidad": 1,
+          "precioUnitario": 900,
+          "costoUnitario": 500,
+          "subtotal": 900,
+          "imagen": "https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=600&auto=format&fit=crop&q=80"
+        }
+      ],
+      "total": 2650,
+      "costoTotal": 1600,
+      "gananciaEstimada": 1050,
+      "metodoPago": "mercadopago",
+      "estadoPago": "confirmado",
+      "modalidadRetiro": "recreo",
+      "recreoHora": "12:00 - Segundo Recreo",
+      "estado": "pendiente",
+      "fecha": "2026-09-18T18:21:46.799Z",
+      "comprobanteId": "COMP-103-3451",
+      "updatedAt": "2026-09-18T18:21:46.799Z"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "prov_1",
+      "nombre": "Distribuidora Golomax S.A.",
+      "telefono": "011-4567-8900",
+      "email": "ventas@golomax.com.ar",
+      "contacto": "Carlos Varela",
+      "productosAsociados": [
+        "prod_alfajor_guaymallen",
+        "prod_beldent"
+      ],
+      "totalComprado": 68500,
+      "ultimaCompra": "2026-09-15T18:36:46.799Z"
+    },
+    {
+      "id": "prov_2",
+      "nombre": "Bebidas del Valle SRL",
+      "telefono": "011-5678-1234",
+      "email": "pedidos@bebidasdelvalle.com",
+      "contacto": "Mariana Pérez",
+      "productosAsociados": [
+        "prod_coca",
+        "prod_agua",
+        "prod_aquarius"
+      ],
+      "totalComprado": 124000,
+      "ultimaCompra": "2026-09-13T18:36:46.799Z"
+    },
+    {
+      "id": "prov_3",
+      "nombre": "Panificadora Central",
+      "telefono": "011-4433-2211",
+      "email": "central@panificadora.com",
+      "contacto": "Esteban Domínguez",
+      "productosAsociados": [
+        "prod_tostado",
+        "prod_empanada"
+      ],
+      "totalComprado": 45000,
+      "ultimaCompra": "2026-09-17T18:36:46.799Z"
+    }
+  ],
+  "purchases": [
+    {
+      "id": "pur_1",
+      "proveedorId": "prov_2",
+      "proveedorNombre": "Bebidas del Valle SRL",
+      "items": [
+        {
+          "productoId": "prod_coca",
+          "productoNombre": "Coca-Cola 500ml",
+          "cantidad": 48,
+          "precioCosto": 1100,
+          "subtotal": 52800
+        },
+        {
+          "productoId": "prod_agua",
+          "productoNombre": "Agua Mineral Villavicencio 500ml",
+          "cantidad": 36,
+          "precioCosto": 700,
+          "subtotal": 25200
+        }
+      ],
+      "total": 78000,
+      "fecha": "2026-09-13T18:36:46.799Z",
+      "notas": "Entrega en puerta del colegio con remito #4582"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "act_1",
+      "usuarioId": "usr_admin_1",
+      "usuarioNombre": "Roberto",
+      "accion": "Modificación de precio",
+      "elementoAfectado": "Coca-Cola 500ml",
+      "detalle": "Actualizó el precio de venta a $1.800",
+      "fecha": "2026-09-16T18:36:46.799Z"
+    },
+    {
+      "id": "act_2",
+      "usuarioId": "usr_admin_1",
+      "usuarioNombre": "Roberto",
+      "accion": "Ingreso de compra a proveedor",
+      "elementoAfectado": "Bebidas del Valle SRL",
+      "detalle": "Registró compra #pur_1 por $78.000 y actualizó stock",
+      "fecha": "2026-09-17T02:36:46.799Z"
+    },
+    {
+      "id": "act_3",
+      "usuarioId": "usr_admin_1",
+      "usuarioNombre": "Roberto",
+      "accion": "Entrega de pedido",
+      "elementoAfectado": "Pedido #101",
+      "detalle": "Marcó pedido de Matías Olís como entregado",
+      "fecha": "2026-09-17T23:36:46.799Z"
+    }
+  ],
+  "settings": {
+    "nombreKiosco": "Kiosco Escolar San Martín",
+    "logoUrl": "",
+    "aliasMp": "kiosco.sanmartin.mp",
+    "cbuMp": "0000003100012345678901",
+    "qrImageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https%3A%2F%2Fmpago.la%2Fpos%2Fkiosco-escolar-sanmartin",
+    "telefonoContacto": "+54 11 4567-8900",
+    "horarioAtencion": "Lunes a Viernes de 07:30 a 17:00 hs",
+    "permitirPedidosRecreo": true,
+    "notificacionesSonido": true,
+    "recreosDisponibles": [
+      "09:15 - Recreo Mañana (15 min)",
+      "10:45 - Recreo Principal (20 min)",
+      "12:15 - Almuerzo escolar",
+      "14:30 - Recreo Tarde (15 min)"
+    ]
+  }
+}

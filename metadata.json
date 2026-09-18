@@ -1,0 +1,6 @@
+{
+  "name": "Kiosco Escolar",
+  "description": "Sistema integral de gestión de kiosco escolar y tienda online para alumnos con pedidos en tiempo real, control de stock y finanzas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
